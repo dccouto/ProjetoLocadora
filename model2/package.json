@@ -1,0 +1,21 @@
+{
+  "name": "getone",
+  "version": "1.0.0",
+  "description": "projeto do curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Couto",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "date-fns": "^2.7.0",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.0.0",
+    "require-dir": "^1.2.0",
+    "sequelize": "^5.21.2"
+  }
+}

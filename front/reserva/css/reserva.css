@@ -1,0 +1,101 @@
+.linha {
+    background-color: rgb(211, 207, 207);
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.dados {
+    padding-top: 70px;
+}
+
+.form-control {
+    width: 260px;
+}
+
+#formGroupExampleInput {
+    width: 310px;
+}
+
+h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card {
+    width: 350px !important;
+    height: 452px;
+}
+#cardM{
+    width: 350px !important;
+    height: 452px;
+}
+
+.card-body {
+    background-color: #F4F4F4;
+}
+
+#imgCard {
+    margin-top: 35px;
+}
+
+.dataInicial {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.rodapePrazo {
+    font-size: 10pt;
+    text-align: justify;
+}
+
+#btnDetail {
+    margin: 0 auto;
+}
+
+.bloco-btn {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18pt;
+    padding: 30px;
+    background-color: #F4F4F4;
+}
+
+.py-5 {
+    /* footer */
+    margin-top: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.img{
+    width: 350px;
+    height: 250px;
+    margin: 0;
+}
+
+/* Inicio Modal */
+.modal-content{
+    width: 450px !important;
+    height: 530px !important;
+
+}
+.imgmodal{
+    width: 430px;
+    height: 230px;
+    padding-right: 12px;
+    margin: 0;
+}
+.modal-header{
+    margin: 0px;
+    padding-left: 15px;
+    padding: 0px 20px 0px 20px !important;
+}
+
+.close{
+    padding-top: 30px !important;
+}
+/* fim do modal */

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Get One - Reservas</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--  jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- Isolated Version of Bootstrap, not needed if your site already uses Bootstrap -->
+  <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/reserva.css">
+
+</head>
+
+<body onload="initPage()">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index/index.html">Get One</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index/index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../reserva/reserva.html">Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../sobre/sobre.html">Quem Somos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /.navigation -->
+
+  <div class="container dados">
+    <div class="linha">
+      <h1>&nbsp;Reservas</h1>
+    </div>
+    <div class="row">
+      <!-- grid left -->
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            <h3>Prazos</h3>
+          </div>
+          <div class="card-body">
+            <div class="dataInicial">
+              Data Inicial&nbsp;*
+              <input type="datetime-local" class="form-control" name="" id="dataInicial">
+            </div>
+            Data Final&nbsp;*
+            <input type="datetime-local" class="form-control" name="" id="dataFinal">
+          </div>
+          <div class="card-footer">
+            <p class="rodapePrazo">Aviso: Se a data final / hora não forem cumpridas,
+              o cliente estará sujeito a pagamento de juros de acordo
+              com as horas ultrapassadas!</p>
+          </div>
+        </div>
+      </div>
+      <!-- grid middle -->
+      <div class="col-sm" id="cardM">
+        <!-- <div class="card" id="cardM" style="width: 18rem;"> -->
+          
+      </div>
+      <!-- grid right -->
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class="card-header">
+            <h3>Dados Pessoais</h3>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">CNH&nbsp;*</label>
+                <input type="text" class="form-control" id="formCnh" placeholder="Insira sua CNH">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Nome&nbsp;*</label>
+                <input type="text" class="form-control" id="formNome" placeholder="Insira seu nome">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Endereço&nbsp;*</label>
+                <input type="text" class="form-control" id="formEndereco" placeholder="Insira seu endereço">
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput2">Telefone&nbsp;*</label>
+                <input type="text" class="form-control" id="formTelefone" placeholder="Insira seu telefone">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container dados -->
+  </div>
+  <div class="container">
+    <div class="row marketing">
+      <div class="col-lg-12">
+        <form id="btnConfirm">
+          <div class="bloco-btn">
+            <p>Confirmar sua reserva?</p>
+            <button type="button" class="btn btn-primary" onclick="alertConfirm()">Confirmar</button>
+            <button type="button" class="btn btn-danger" onclick="alertRemove()">Remover</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <p class='resultados'></p>
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Get One 2019</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- My script -->
+  <script src="js/reserva.js"></script>
+
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content" id="modal">
+     <!-- Modal inserido pelo API.js -->
+    </div>
+    
+  </div>
+</div>
+
+</html>

@@ -1,0 +1,98 @@
+/* Inicio-carousel */
+.carousel {
+    margin-top: 50px;
+}
+.carousel, .d-block{
+    width: 500px;
+    height: 300px;
+    box-shadow: 1px 1px 4px #f4f4f4;
+    border-radius: 10px;
+}
+.carousel-control-prev-icon{
+    background-image: url(../icons/left-arrow.png);
+    margin-right: 30px;
+}
+.carousel-control-next-icon{
+    background-image: url(../icons/right-arrow.png);
+    margin-left: 30px;
+}
+/* Fim-carousel */
+/* Inicio Cards */
+/* #corpo-card {
+    background-color: #F4F4F4;
+
+}
+.moto-card{
+    width: 300px;
+    height: 198.58px;
+    box-shadow: 1px 1px 4px #f4f4f4;
+    border-radius: 10px;
+}
+.col-lg-5{
+    margin-left: 80px;
+}
+.d-block {
+    width: 500px;
+    height: 320px;
+}
+#btn-second{
+    float: right;
+} */
+/* Fim Cards */
+
+/* Inicio novo card */
+
+.col-sm{
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+.card-text{
+    color: rgb(50, 50, 50) !important;
+    text-align: center !important;
+    font-weight: bold;
+
+}
+.card-moto{
+    box-shadow: 1px 1px 4px #999;/* Colocar sombra no box */
+    width: 430px !important;
+    height: 350px !important;
+}
+.card-moto:hover{
+    box-shadow: 0 0 1em #999;/* Colocar sombra no box */
+}
+.img{
+    width: 430px;
+    height: 230px;
+    margin: auto;
+}
+.card-header{
+    background-color: white;
+    font-size: large;
+}
+.card-footer{
+    background-color: white;
+}
+.btn-primary{
+    float: left;
+    margin-top: 2px;
+
+}
+.btn-secondary{
+    float: right;
+    margin-top: 2px;
+}
+/* Fim novo card */
+/* Inicio Modal */
+.modal-content{
+    width: 450px !important;
+    height: 500px !important;
+
+}
+.imgmodal{
+    width: 430px;
+    height: 230px;
+    padding-right: 12px;
+    margin: 0;
+}
+/* fim do modal */

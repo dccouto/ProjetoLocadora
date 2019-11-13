@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Get One - Página Inicial</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body onload="initPage()">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" id="teste" href="#">Get One</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li><h5 id="login">{{ message }}</h5></li> -->
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="../reserva/reserva.html">Reservas</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="../sobre/sobre.html">Quem Somos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Heading Row -->
+    <div class="row align-items-center my-5">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/Moto_Scooter_NMAX_ABS_2018_Lateral_S-White-Branco-Metalico.jpg"
+              alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/2019_FACTOR_150_PRETO-ECLIPSE.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/Moto_Crosser_S_2018_Lateral_Preto_Eclipse-Preto-Solido.jpg"
+              alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/Moto_Fazer_250_ABS_2018_Lateral_Racing_Blue-Azul-Metalico.jpg"
+              alt="Fourth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/2020_R3_lateral_direita_racing_blue.jpg" alt="Fifth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/Moto_MT-07_ABS_2020_lateral_direita_ice_fluo.jpg" alt="Sixth slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- /.col-lg-8 -->
+      <div class="col-lg-5">
+        <h1 class="font-weight-light">Bem Vindo a Get One</h1>
+        <p>Alugue a sua motocicleta e seja feliz, temos a motocicleta dos seus sonhos, de variáveis tipos e tamanhos,
+          venha conhecer!</p>
+        <a class="btn btn-primary" href="../sobre/sobre.html">Saiba Mais!</a>
+      </div>
+      <!-- /.col-md-4 -->
+    </div>
+    <!-- /.row -->
+
+    <!-- Call to Action Well -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+      <div class="card-body">
+        <p class="text-white m-0">Quando surgiu a ideia da Get One, o foco era aluguel de carros, mas na época vimos a
+          necessidade de algo diferente do mercado tradicional,
+          foi assim que tivemos a ideia do aluguel de motocicletas, hoje somos a maior empresa do Brasil nesse ramo.</p>
+      </div>
+    </div>
+<!-- CARDS -->
+<section id="about">
+    <div class="row mt-5" id="card">
+     <!-- os cards serão criados aqui pelo api.js dinamicamente -->
+    </div>
+</section>
+<!-- Fim do Card -->
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Get One 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script> <!--vue.js-->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+
+
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content" id="modal">
+     <!-- Modal inserido pelo API.js -->
+    </div>
+    
+  </div>
+</div>
+
+</html>

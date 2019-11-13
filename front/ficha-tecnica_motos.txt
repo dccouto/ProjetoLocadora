@@ -1,0 +1,24 @@
+NMAX 160 ABS
+Preço R$ xxx,xx
+Potência máxima 15,1 cv (8.000rpm)
+Combustível Gasolina
+
+FACTOR 150 UBS
+Preço R$ xxx,xx
+Potência máxima Gasolina: 12,2cv (7.500 rpm) | Álcool: 12,4cv (7.500 rpm)
+Combustível Gasolina/Álcool
+
+CROSSER 150 S ABS
+Preço R$ xxx,xx
+Potência máxima 12,2cv/7.500 rpm (Gasolina) – 12,4cv/7.500 rpm (Etanol)
+Combustível Gasolina/Álcool
+
+R3 ABS
+Preço R$ xxx,xx
+Potência máxima 42,01 cv / 10.750 rpm
+Combustível Gasolina
+
+MT-07
+Preço R$ xxx,xx
+Potência máxima 74,8 cv (9.000 rpm)
+Combustível Gasolina
