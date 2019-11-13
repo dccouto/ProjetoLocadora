@@ -52,7 +52,8 @@ module.exports = {
     },
     //Lista todos veiculos Disponiveis
     async showVeiculoDisponivel(req, res){
-        await sequelize.query(' SELECT v.* FROM veiculos AS v  WHERE v.id <> (SELECT id_veiculo FROM Aluguels WHERE status = ?);', {
+        // await sequelize.query(' SELECT v.* FROM veiculos AS v  WHERE v.id <> (SELECT id_veiculo FROM Aluguels WHERE status = ?);', {
+            await sequelize.query(' SELECT * FROM veiculos WHERE status = ?;', {
             replacements: [req.params.id],
             type: sequelize.QueryTypes.SELECT
         }).then(veiculoOk => {
@@ -75,7 +76,8 @@ module.exports = {
 
     //Insert um cliente
     async insertCliente(req, res) {
-        const cliente = await Cliente.create(req.body);
+        var cliente = [];
+        cliente.push(await Cliente.create(req.body));
         return res.json(cliente);
     },
 

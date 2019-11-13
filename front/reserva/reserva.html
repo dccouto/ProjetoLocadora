@@ -66,10 +66,10 @@
           <div class="card-body">
             <div class="dataInicial">
               Data Inicial&nbsp;*
-              <input type="datetime-local" class="form-control" name="" id="dataInicial">
+              <input type="datetime-local" class="form-control" name="" id="dataInicial" onblur="verificaData()">
             </div>
             Data Final&nbsp;*
-            <input type="datetime-local" class="form-control" name="" id="dataFinal">
+            <input type="datetime-local" class="form-control" name="" id="dataFinal" onblur="verificaData()">
           </div>
           <div class="card-footer">
             <p class="rodapePrazo">Aviso: Se a data final / hora não forem cumpridas,
@@ -93,7 +93,7 @@
             <form>
               <div class="form-group">
                 <label for="formGroupExampleInput2">CNH&nbsp;*</label>
-                <input type="text" class="form-control" id="formCnh" placeholder="Insira sua CNH">
+                <input type="text" class="form-control" id="formCnh" placeholder="Insira sua CNH" onblur="verificaUser()">
               </div>
               <div class="form-group">
                 <label for="formGroupExampleInput">Nome&nbsp;*</label>
@@ -118,10 +118,12 @@
     <div class="row marketing">
       <div class="col-lg-12">
         <form id="btnConfirm">
-          <div class="bloco-btn">
-            <p>Confirmar sua reserva?</p>
-            <button type="button" class="btn btn-primary" onclick="alertConfirm()">Confirmar</button>
-            <button type="button" class="btn btn-danger" onclick="alertRemove()">Remover</button>
+          <div class="bloco-btn" >
+            
+            <div id="valorTotal"> </div>
+            
+            <button type="button" class="btn btn-primary" id="buttonConfirmar" onclick="alertConfirm()">Confirmar</button>
+            <button type="button" class="btn btn-danger" onclick="alertRemove()">Cancelar</button>
           </div>
         </form>
       </div>
@@ -137,6 +139,7 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
+  
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- My script -->
   <script src="js/reserva.js"></script>

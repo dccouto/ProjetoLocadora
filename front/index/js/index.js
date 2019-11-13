@@ -42,7 +42,6 @@ function initPage() {
     };
 
     xhttp.open("GET", "http://localhost:3000/list/veiculo/disponivel/d", true);
-    // xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
 
     xhttp.send();
 }

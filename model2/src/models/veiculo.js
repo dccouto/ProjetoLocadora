@@ -39,6 +39,9 @@ const Veiculo = sequelize.define('veiculos', {
     },
     link: {
         type: Sequelize.STRING
+    },
+    status:{
+        type: Sequelize.CHAR
     }
 });
 Veiculo.sync({
