@@ -96,3 +96,13 @@
     margin: 0;
 }
 /* fim do modal */
+
+
+.nav-link, span, .card-header, .modal-header{
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.navbar-brand{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 25pt;
+}

@@ -265,7 +265,9 @@ function cadastraAluguel() {
 
 
 }
-
+function alertRemove() {
+    window.location.href = `../index/index.html`;
+}
 
 
 function alteraStatus() {

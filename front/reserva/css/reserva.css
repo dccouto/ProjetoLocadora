@@ -99,3 +99,14 @@ h4 {
     padding-top: 30px !important;
 }
 /* fim do modal */
+
+
+/*=====================*/
+.nav-link, .linha, h3{
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.navbar-brand{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 25pt;
+}

@@ -18,3 +18,14 @@
 .m-0{
     padding-top: 10px !important;
 }
+
+h1, h2, .nav-link {
+    font-family: 'ZCOOL KuaiLe', cursive;
+
+}
+
+.navbar-brand {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 25pt;
+}
+
