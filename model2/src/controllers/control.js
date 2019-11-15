@@ -61,8 +61,13 @@ module.exports = {
     },
 //lista todos veiculos Alugados e Reservados
     async showVeiculoReserva(req, res){
-        await sequelize.query(`SELECT v.id, v.modelo, v.placa, v.status, a.data_inicial, a.data_final FROM veiculos AS v, aluguels AS a WHERE ((v.status = 'a') OR (v.status = 'r')) AND v.id = a.id_veiculo;`, {
-            replacements: [[req.params.id],[req.params.q]],
+        await sequelize.query(
+            `SELECT v.id, v.modelo, v.placa, v.status, a.data_inicial, a.data_final, a.id as aluguelId 
+            FROM veiculos AS v, aluguels AS a 
+            WHERE ((v.status = 'a') OR (v.status = 'r')) 
+            AND 
+            ((v.id = a.id_veiculo) AND (a.status <> 'd'));`, {
+            // replacements: [[req.params.id],[req.params.q]],
             type: sequelize.QueryTypes.SELECT
         }).then(veiculoOk => {
             return res.json(veiculoOk);
@@ -112,6 +117,13 @@ module.exports = {
         await veiculo.update(req.body);
         res.json(veiculo);
     },
+    //Update status Aluguel
+    async updateStatusAluguel(req, res){
+        const aluguel = await Aluguel.findByPk(req.params.id);
+        await aluguel.update(req.body);
+        res.json(aluguel);
+    },
+
     //delete Cliente
     async destroyCliente(req, res) {
         const cliente = await Cliente.findByPk(req.params.id);

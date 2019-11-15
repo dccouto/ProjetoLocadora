@@ -22,7 +22,10 @@ routes.post('/register/veiculo', control.insertVeiculo);
 routes.post('/register/aluguel', control.insertAluguel);
 
 routes.put('/update/cliente/:id', control.updateClienteId);
+routes.post('/update/veiculo/:id', control.updateVeiculoId);
+routes.post('/update/statusaluguel/:id', control.updateStatusAluguel);
 routes.put('/update/veiculo/:id', control.updateVeiculoId);
+
 
 routes.delete('/delete/cliente/:id', control.destroyCliente);
 routes.delete('/delete/veiculo/:id', control.destroyVeiculo);

@@ -14,9 +14,8 @@ function initPage() {
                     <td>${veiculos.data[i].data_final}</td>
                     <td>${veiculos.data[i].status}</td>
                     <td>
-                    <button type="button" class="btn btn-success">Disp</button>
-                    <button type="button" class="btn btn-warning">Res</button>
-                    <button type="button" class="btn btn-danger">Alu</button>
+                      <button type="button" class="btn btn-success" onclick = disponivel(${veiculos.data[i].id},${veiculos.data[i].aluguelId})>Disponivel</button>
+                      <button type="button" class="btn btn-danger" onclick = alugada(${veiculos.data[i].id},${veiculos.data[i].aluguelId})>Alugada</button>
                     </td>
 
                 
@@ -28,4 +27,32 @@ function initPage() {
     .catch(function (erro) {
         console.log(erro);        
     })
+}
+
+function disponivel(id, aluguelId) {
+  axios.post(`http://localhost:3000/update/veiculo/${id}`, {
+    status: "d"
+  })
+  .then(res =>{
+    axios.post(`http://localhost:3000/update/statusaluguel/${aluguelId}`,{
+      status: "d"
+    })
+    .then(res =>{
+      window.location.href = `../administrador/administrador.html`
+    })
+  })
+}
+
+function alugada(id, aluguelId) {
+  axios.post(`http://localhost:3000/update/veiculo/${id}`, {
+    status: "a"
+  })
+  .then(res =>{
+    axios.post(`http://localhost:3000/update/statusaluguel/${aluguelId}`,{
+      status: "a"
+    })
+    .then(res =>{
+      window.location.href = `../administrador/administrador.html`
+    })
+  })
 }
