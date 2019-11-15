@@ -52,9 +52,17 @@ module.exports = {
     },
     //Lista todos veiculos Disponiveis
     async showVeiculoDisponivel(req, res){
-        // await sequelize.query(' SELECT v.* FROM veiculos AS v  WHERE v.id <> (SELECT id_veiculo FROM Aluguels WHERE status = ?);', {
             await sequelize.query(' SELECT * FROM veiculos WHERE status = ?;', {
             replacements: [req.params.id],
+            type: sequelize.QueryTypes.SELECT
+        }).then(veiculoOk => {
+            return res.json(veiculoOk);
+        })
+    },
+//lista todos veiculos Alugados e Reservados
+    async showVeiculoReserva(req, res){
+        await sequelize.query(`SELECT v.id, v.modelo, v.placa, v.status, a.data_inicial, a.data_final FROM veiculos AS v, aluguels AS a WHERE ((v.status = 'a') OR (v.status = 'r')) AND v.id = a.id_veiculo;`, {
+            replacements: [[req.params.id],[req.params.q]],
             type: sequelize.QueryTypes.SELECT
         }).then(veiculoOk => {
             return res.json(veiculoOk);

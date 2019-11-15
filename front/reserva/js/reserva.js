@@ -260,7 +260,7 @@ function cadastraAluguel() {
             window.location.href = `../index/index.html`;
         }
     };
-    xhttp.send(JSON.stringify({id_cliente: clienteId, id_veiculo: veiculoId,data_inicial : dataInicial,data_final : dataFinal,status:"d"}));       
+    xhttp.send(JSON.stringify({id_cliente: clienteId, id_veiculo: veiculoId,data_inicial : dataInicial,data_final : dataFinal,status:"r"}));       
 
 
 

@@ -1,0 +1,31 @@
+.bg-primary {
+    padding: 80px !important;
+    color: #212529 !important;
+    background-color: #F8F9FA !important;
+}
+.text-center {
+    padding-top: 50px;
+}
+#about {
+    padding: 50px;
+}
+#services {
+    padding: 50px;
+}
+.py-5{
+    padding: 48px !important;
+}
+.m-0{
+    padding-top: 10px !important;
+}
+
+h1, h2, .nav-link {
+    font-family: 'ZCOOL KuaiLe', cursive;
+
+}
+
+.navbar-brand {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 25pt;
+}
+

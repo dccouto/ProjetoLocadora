@@ -10,6 +10,8 @@ routes.get('/clientes/cnh/:id', controlReserva.showCnh);
 routes.get('/list/veiculo/:id?', control.showVeiculo);
 
 routes.get('/list/veiculo/disponivel/:id', control.showVeiculoDisponivel);
+routes.get('/list/veiculo/reservasealugadas/:id/:q', control.showVeiculoReserva);
+
 
 routes.get('/aluguel/:id?', control.showAluguel);
 routes.get('/calcular/:dataIni/:dataFin/:id', controlReserva.calculaValor);
