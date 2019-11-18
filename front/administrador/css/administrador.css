@@ -12,9 +12,7 @@
 #services {
     padding: 50px;
 }
-.py-5{
-    padding: 48px !important;
-}
+
 .m-0{
     padding-top: 10px !important;
 }
@@ -28,4 +26,13 @@ h1, h2, .nav-link {
     font-family: 'ZCOOL KuaiLe', cursive;
     font-size: 25pt;
 }
-
+/* ---------------------------------------- */
+#page-content{
+    flex: 1 0 auto;
+}
+html, body{
+    height: 100%;
+}
+#sticky-footer{
+    flex-shrink: none;
+}

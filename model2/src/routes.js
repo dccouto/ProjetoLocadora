@@ -2,6 +2,7 @@ const express = require('express');
 const routes = express.Router();
 const control = require('./controllers/control');
 const controlReserva = require('./controllers/controlReserva');
+const controlLogin = require('./controllers/controlLogin');
 
 
 
@@ -30,5 +31,14 @@ routes.put('/update/veiculo/:id', control.updateVeiculoId);
 routes.delete('/delete/cliente/:id', control.destroyCliente);
 routes.delete('/delete/veiculo/:id', control.destroyVeiculo);
 routes.delete('/delete/aluguel/:id', control.destroyAluguel);
+
+
+
+//login
+routes.post('/login',controlLogin.login);
+routes.post('/session',controlLogin.session);//consulta sessão
+routes.post('/session/generate',controlLogin.gerarSession); //gerar sessão
+//
+
 
 module.exports = routes;

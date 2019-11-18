@@ -1,17 +1,22 @@
 var veiculos;
 
 
+function logoff(){
+    sessionStorage.removeItem('user');
+    sessionStorage.removeItem('pass');
+    sessionStorage.removeItem('sair');
+    sessionStorage.removeItem('sessao');
+    window.location.href = `../index/index.html`            
 
+}
 
 //===========================================
 // Inicia a pagina incluindo os cards
 //===========================================
 function initPage() {
-    sessionStorage.setItem('dados', 'Diego Couto')
-    var myObject = new Vue({
-        el: '#login',
-        data: {message: sessionStorage.getItem('dados')}
-      })
+    document.getElementById('usuarioAtivo').innerHTML = sessionStorage.getItem('user');
+    document.getElementById('logoff').innerHTML = sessionStorage.getItem('sair');
+
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -80,12 +85,9 @@ function openModal(id) {
             </div>`
         }
     }
-
-
 }
 
 function abrirReserva(IdVehicle){
     window.location.href = `../reserva/reserva.html?id=${IdVehicle}`
 }
 
-// module.exports = veiculos;

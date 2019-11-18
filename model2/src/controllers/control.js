@@ -62,12 +62,11 @@ module.exports = {
 //lista todos veiculos Alugados e Reservados
     async showVeiculoReserva(req, res){
         await sequelize.query(
-            `SELECT v.id, v.modelo, v.placa, v.status, a.data_inicial, a.data_final, a.id as aluguelId 
+            `SELECT v.id, v.modelo, v.placa, v.status, a.data_inicial, a.data_final, a.id as aluguelId, a.id_cliente 
             FROM veiculos AS v, aluguels AS a 
             WHERE ((v.status = 'a') OR (v.status = 'r')) 
             AND 
             ((v.id = a.id_veiculo) AND (a.status <> 'd'));`, {
-            // replacements: [[req.params.id],[req.params.q]],
             type: sequelize.QueryTypes.SELECT
         }).then(veiculoOk => {
             return res.json(veiculoOk);

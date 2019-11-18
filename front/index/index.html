@@ -31,16 +31,29 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" id="logoff" onclick="logoff()">
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" id="usuarioAtivo">
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
         <ul class="navbar-nav ml-auto">
-          <!-- <li><h5 id="login">{{ message }}</h5></li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="../login/login.html">Painel Adm
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="../reserva/reserva.html">Reservas</a>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="../sobre/sobre.html">Quem Somos</a>
           </li>
@@ -112,13 +125,13 @@
         <p class="text-white m-0 lead">Confira abaixo às melhores motocicletas disponíveis!</p>
       </div>
     </div>
-<!-- CARDS -->
-<section id="about">
-    <div class="row mt-5" id="card">
-     <!-- os cards serão criados aqui pelo api.js dinamicamente -->
-    </div>
-</section>
-<!-- Fim do Card -->
+    <!-- CARDS -->
+    <section id="about">
+      <div class="row mt-5" id="card">
+        <!-- os cards serão criados aqui pelo api.js dinamicamente -->
+      </div>
+    </section>
+    <!-- Fim do Card -->
   </div>
   <!-- /.container -->
 
@@ -132,7 +145,8 @@
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script> <!--vue.js-->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!--vue.js-->
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>
 
@@ -142,12 +156,12 @@
 <!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
   <div class="modal-dialog">
-  
+
     <!-- Modal content-->
     <div class="modal-content" id="modal">
-     <!-- Modal inserido pelo API.js -->
+      <!-- Modal inserido pelo API.js -->
     </div>
-    
+
   </div>
 </div>
 

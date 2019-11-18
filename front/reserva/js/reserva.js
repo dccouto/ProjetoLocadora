@@ -2,15 +2,25 @@ var confirmation;
 var usuarioExiste = false;
 var veiculoId;
 var clienteId
+
+function logoff(){
+    sessionStorage.removeItem('user');
+    sessionStorage.removeItem('pass');
+    sessionStorage.removeItem('sair');
+    sessionStorage.removeItem('sessao');
+    window.location.href = `../reserva/reserva.html`            
+
+
+}
 //===========================================
 // Inicia a pagina incluindo os cards
 //===========================================
+
 function initPage() {
-    // sessionStorage.setItem('dados', 'Diego Couto')
-    // var myObject = new Vue({
-    //     el: '#login',
-    //     data: {message: sessionStorage.getItem('dados')}
-    //   })
+    document.getElementById('usuarioAtivo').innerHTML = sessionStorage.getItem('user');
+    document.getElementById('logoff').innerHTML = sessionStorage.getItem('sair');
+
+
     var xhttp = new XMLHttpRequest();
     veiculoId = location.search.split('id=')[1];
     xhttp.onreadystatechange = function () {

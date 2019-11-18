@@ -1,0 +1,41 @@
+.col-sm-9 {
+    margin-top: 108px;
+}
+
+h1 {
+    text-align: center;
+}
+
+span, .card-title, .btn {
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.navbar-brand {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-size: 25pt;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#page-content {
+    flex: 1 0 auto;
+  }
+  
+  #sticky-footer {
+    flex-shrink: none;
+  }
+
+.bloco {
+    background-color:rgb(240, 240, 240);
+    height: 660px;
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+.icon {
+    text-align: center;
+    font-size: 60px;
+}
